@@ -1,0 +1,40 @@
+GET http://localhost:3000/perfumes HTTP/1.1
+
+###
+
+GET http://localhost:3000/perfumes/2 HTTP/1.1
+
+###
+
+POST http://localhost:3000/perfumes/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Bad boy",
+  "creador": "Carolina Herrera",
+  "precio": 146000,
+  "tamaño": "150ml"
+}
+
+###
+PUT http://localhost:3000/perfumes/3 HTTP/1.1
+Content-Type: : application/json
+
+{
+  "precio": 145000
+}
+
+###
+
+DELETE http://localhost:3000/perfumes/3l HTTP/1.1
+
+###
+POST http://localhost:3000/perfumes/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Bad boy",
+  "creador": "Carolina Herrera",
+  "precio": 146000,
+  "tamaño": "150ml"
+}
